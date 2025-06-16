@@ -53,7 +53,3 @@ df2 = px.histogram(df2, x = "club", y = "match_played",
 st.plotly_chart(goals2, use_container_width = True )
 
 
-
-
-
-st.
