@@ -42,7 +42,7 @@ st.markdown("Total Lost")
 st.write(df["t_lost"].describe())
  
 st.markdown("Bar Chart Representation")
-goals = px.bar(df["player_name"], y = "players", title = "Total goals lost")
+goals = px.bar(df["player_name"], y = "player_name", title = "Total goals lost")
 st.plotly_chart(goals, use_container_width = True)
 
 st.markdown("Bivariate Analysis")
