@@ -41,7 +41,7 @@ st.write(df["t_won"].describe())
 st.markdown("Total Lost")
 st.write(df["t_lost"].describe())
  
- st.markdown("Bar Chart Representation")
+ st.markdown("## Bar_Chart_Representation")
  goals = px.bar(df["players"], y = "players", title = "Total goals lost")
  st.plotly_chart(goals, use_container_width = True)
 
