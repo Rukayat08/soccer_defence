@@ -43,13 +43,4 @@ st.write(df["t_lost"].describe())
  
 st.markdown("Bar Chart Representation")
 goals = px.bar(df["player_name"], y = "player_name", title = "Total goals lost")
-st.plotly_chart(goals, use_container_width = True)
-
-st.markdown("Bivariate Analysis")
- 
-st.markdown("### Player Vs Total Match Won")
-goals2 = pd.DataFrame(df["club"], df["player_name"])
-st.write(goals2)
-
-goals2 = px.histogram(goals2, x = "club", y = "match_played", title = "Distribution of Players vs Match played")
-st.plotly_chart(goals2, use_container_width = True )
+st.plotly_chart(goals, use_container_width = True) 
