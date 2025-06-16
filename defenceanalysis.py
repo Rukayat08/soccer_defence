@@ -48,8 +48,8 @@ st.plotly_chart(goals, use_container_width = True)
 st.markdown("Bivariate Analysis")
  
 st.markdown("### Player Vs Total Match Won")
-df2 = pd.DataFrame(df["club"], df["match_played"])
-st.write(df2)
+goals2 = pd.DataFrame(df["club"], df["t_won"])
+st.write(goals2)
 
-goals2 = px.histogram(df2, x = "club", y = "match_played", title = "Distribution of Players vs Match played")
+goals2 = px.histogram(goals2, x = "club", y = "match_played", title = "Distribution of Players vs Match played")
 st.plotly_chart(goals2, use_container_width = True )
